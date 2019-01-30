@@ -1,0 +1,23 @@
+{
+  "name": "pokemonapi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mhinojosa24/pokemonApi.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mhinojosa24/pokemonApi/issues"
+  },
+  "homepage": "https://github.com/mhinojosa24/pokemonApi#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
