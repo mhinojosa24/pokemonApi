@@ -2,13 +2,27 @@ const express = require('express');
 const app = express();
 const port = process.env.PORT || 3000;
 
-var trainer = {
-    "trainer" : "ruhsane",
-    "pokemon" : ["pikachu", "Mew", "Lugia" ]
+var venue = {
+    "events": [{
+            "band": "Smashing Pumkins",
+            "date": "December 20",
+            "type": "concert"
+        }, {
+            "band": "Slpiknot"
+        }],
+    "seats": 200
 }
 
-app.get('/', (req, res) => {
-    res.json(trainer)
+app.get('/venue', (req, res) => {
+    res.json(venue)
+})
+
+app.get('/venue/seats', (req, res) => {
+    res.json(venue["seats"])
+})
+
+app.get('/venue/events', (req, res) => {
+    res.json(venue["events"][0])
 })
 
 
